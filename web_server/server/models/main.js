@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 module.exports.connect = (uri) => {
 	// mongoose.connect(uri);
 	mongoose.connect(uri,{ useNewUrlParser: true });
+	
 	mongoose.set('useCreateIndex', true)
 	
 	
